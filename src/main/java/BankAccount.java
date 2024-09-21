@@ -1,14 +1,14 @@
 public class BankAccount {
-	private int minBalance;
+    private int minBalance;
     private int balance;
     private String owner;
  
-	  public String getOwner() {
-		   return owner;
-	  }
-	  public void setOwner(String owner) {
-		  this.owner = owner;
-	  }
+    public String getOwner() {
+       return owner;
+    }
+    public void setOwner(String owner) {
+	this.owner = owner;
+    }
 	
 	  //only recives a number bigger than minbalance
     public BankAccount(int balance, int minBalance, String owner) {
@@ -45,16 +45,16 @@ public class BankAccount {
     public int getBalance() {
         return balance;
     }
-	  public int getMinBalance() {
-		   return minBalance;
-	  }
-	  public void setMinBalance(int minBalance) {
-		    this.minBalance = minBalance;
-	  }
-	  public void setBalance(int balance) {
-		   if(balance>minBalance) {
-		      this.balance = balance;
-		   }	
-	  }
+    public int getMinBalance() {
+	return minBalance;
+    }
+    public void setMinBalance(int minBalance) {
+	 this.minBalance = minBalance;
+    }
+    public void setBalance(int balance) {
+	if(balance>minBalance) {
+	    this.balance = balance;
+        }	
+    }
 
 }
